@@ -1,0 +1,10 @@
+{
+    "ProductsCategories": {
+        "namespace": "Products\\Categories",
+        "controller": "CategoriesController"
+    },
+    "ProductsProducts": {
+        "namespace": "Products\\Products",
+        "controller": "ProductsController"
+    }
+}

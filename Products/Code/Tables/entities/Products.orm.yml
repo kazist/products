@@ -1,0 +1,113 @@
+Products\Products\Code\Tables\Products:
+  table: products_products
+  type: entity
+  id:
+    id:
+      type: integer
+      generator: { strategy: AUTO }
+  fields:
+    title:
+      name: title
+      type: string
+      length: 255
+      nullable: false
+    sku_code:
+      name: sku_code
+      type: string
+      length: 255
+      nullable: true
+    category_id:
+      name: category_id
+      type: integer
+      length: 11
+      nullable: true
+    supplier_id:
+      name: supplier_id
+      type: integer
+      length: 11
+      nullable: true
+    description:
+      name: description
+      type: text
+      nullable: true
+    price:
+      scale: 2
+      precision: 11
+      name: price
+      type: decimal
+      nullable: true
+    image:
+      name: image
+      type: integer
+      length: 11
+      nullable: true
+    width:
+      name: width
+      type: string
+      length: 255
+      nullable: true
+    length:
+      name: length
+      type: string
+      length: 255
+      nullable: true
+    Height:
+      name: Height
+      type: string
+      length: 255
+      nullable: true
+    weight:
+      name: weight
+      type: string
+      length: 255
+      nullable: true
+    packaging:
+      name: packaging
+      type: string
+      length: 255
+      nullable: true
+    in_stock:
+      name: in_stock
+      type: integer
+      length: 11
+      nullable: true
+    except:
+      name: except
+      type: string
+      length: 255
+      nullable: true
+    published:
+      name: published
+      type: integer
+      length: 11
+      nullable: true
+    created_by:
+      name: created_by
+      type: integer
+      length: 11
+      nullable: true
+    date_created:
+      name: date_created
+      type: datetime
+      nullable: true
+    modified_by:
+      name: modified_by
+      type: integer
+      length: 11
+      nullable: true
+    date_modified:
+      name: date_modified
+      type: datetime
+      nullable: true
+  indexes:
+    category_id_index:
+      columns: [category_id]
+    supplier_id_index:
+      columns: [supplier_id]
+  lifecycleCallbacks:
+    prePersist:
+      - onPrePersist
+      - onPrePersistCallbacks
+    preUpdate:
+      - onPreUpdate
+      - onPreUpdateCallbacks
