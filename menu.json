@@ -1,82 +1,22 @@
 {
-    "title": "Paygateway",
-    "description": "Paygateway",
-    "alias": "paygateway",
+    "title": "Products",
+    "description": "Products",
+    "alias": "products",
     "icon": "fa fa-money",
-    "home_link": "paygateway\/transactions",
-    "path": "applications/Paygateway",
+    "home_link": "products\/transactions",
+    "path": "applications/Products",
     "is_core": "1",
     "menulist": [{
-            "title": "Transactions",
-            "alias": "admin_paygateway_transactions",
-            "url": "admin/paygateway/transactions",
-            "icon": "fa fa-money",
+            "title": "Products",
+            "alias": "admin_products_products",
+            "url": "admin/products/products",
+            "icon": "fa fa-shopping-bag",
             "children": []
         }, {
-            "title": "Transfers",
-            "alias": "admin_paygateway_transfers",
-            "url": "admin/paygateway/transfers",
-            "icon": "fa fa-paper-plane",
-            "children": []
-        }, {
-            "title": "Withdraws",
-            "alias": "admin_paygateway_withdraws",
-            "url": "admin/paygateway/withdraws",
-            "icon": "fa fa-download",
-            "children": []
-        }, {
-            "title": "Gateways",
-            "alias": "admin_paygateway_gateways",
-            "url": "admin/paygateway/gateways",
-            "icon": "fa fa-cogs",
-            "children": []
-        }, {
-            "title": "Stores",
-            "alias": "admin_paygateway_stores",
-            "url": "admin/paygateway/stores",
-            "icon": "fa fa-shopping-cart",
-            "children": [{
-                    "title": " Gateways",
-                    "alias": "admin_paygateway_stores_gateways",
-                    "url": "admin/paygateway/stores/gateways",
-                    "icon": "fa fa-cogs",
-                    "children": []
-                }]
-        }, {
-            "title": "Rate",
-            "alias": "admin_paygateway_rates",
-            "url": "admin/paygateway/rates",
-            "icon": "fa fa-tasks",
-            "children": [{
-                    "title": " Rate File",
-                    "alias": "admin_paygateway_rates_files",
-                    "url": "admin/paygateway/rates/files",
-                    "icon": "fa fa-file",
-                    "children": []
-                }]
-        }, {
-            "title": "Customers",
-            "alias": "admin_paygateway_customers",
-            "url": "admin/paygateway/customers",
-            "icon": "fa fa-users",
-            "children": [{
-                    "title": " Gateways",
-                    "alias": "admin_paygateway_customers_gateways",
-                    "url": "admin/paygateway/customers/gateways",
-                    "icon": "fa fa-cogs",
-                    "children": []
-                }]
-        }, {
-            "title": "Invoices",
-            "alias": "admin_paygateway_invoices",
-            "url": "admin/paygateway/invoices",
-            "icon": "fa fa-file-text",
-            "children": []
-        }, {
-            "title": "IPN",
-            "alias": "admin_paygateway_ipn",
-            "url": "admin/paygateway/ipn",
-            "icon": "fa fa-tasks",
+            "title": "Categories",
+            "alias": "admin_products_categories",
+            "url": "admin/products/categories",
+            "icon": "fa fa-paper-tasks",
             "children": []
         }]
 }
