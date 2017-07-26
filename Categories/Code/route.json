@@ -1,0 +1,125 @@
+{
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Products\\Orders\\Code\\Controllers\\Admin\\OrdersController::taskAction",
+            "unique_name": "admin.products.categories.task",
+            "route": "admin/products/categories/task",
+            "permissions": "can_write",
+            "arguments": "",
+            "keywords": "categories, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write"],
+                "ADMIN": ["can_write"]
+            }
+        }, {
+            "title": "Order List",
+            "description": "Management of Orders.",
+            "controller": "Products\\Orders\\Code\\Controllers\\Admin\\OrdersController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.products.categories",
+            "route": "admin/products/categories",
+            "arguments": "",
+            "keywords": "category, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Order  ",
+            "description": "Add Order .",
+            "controller": "Products\\Orders\\Code\\Controllers\\Admin\\OrdersController::addAction",
+            "unique_name": "admin.products.categories.add",
+            "route": "admin/products/categories/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "category, add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Order {{ item.name }}",
+            "description": "Edit Order {{ item.name }}.",
+            "controller": "Products\\Orders\\Code\\Controllers\\Admin\\OrdersController::editAction",
+            "unique_name": "admin.products.categories.edit",
+            "route": "admin/products/categories/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "category, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Order Detail: {{ item.name }}",
+            "description": "Order Detail: {{ item.name }}",
+            "controller": "Products\\Orders\\Code\\Controllers\\Admin\\OrdersController::detailAction",
+            "unique_name": "admin.products.categories.detail",
+            "route": "admin/products/categories/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "category, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Order Delete: {{ item.name }}",
+            "description": "Order Delete: {{ item.name }}",
+            "controller": "Products\\Orders\\Code\\Controllers\\Admin\\OrdersController::deleteAction",
+            "unique_name": "admin.products.categories.delete",
+            "route": "admin/products/categories/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "category, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Order Save: {{ item.name }}",
+            "description": "Order Save: {{ item.name }}",
+            "controller": "Products\\Orders\\Code\\Controllers\\Admin\\OrdersController::saveAction",
+            "unique_name": "admin.products.categories.save",
+            "route": "admin/products/categories/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "category, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	
